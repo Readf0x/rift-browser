@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Rift Dev</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="background"></div>
+      <h1 class="gradient">This sucks</h1>
+    </div>
+    <div class="side-by-side">
+      <p class="description">Dude I don't know how to use electron why am I doing this to myself 😢</p>
+      <div class="img-wrapper">
+        <img src="./assets/miku.jpg" alt="miku">
+        <p class="img-alt">Miku :D</p>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

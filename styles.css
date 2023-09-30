@@ -1,0 +1,71 @@
+/* styles.css */
+
+/* Global styles */
+:root {
+  font-family: 'Noto Sans', 'MesloLGS NF', Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #1e1e2e;
+    color: #cdd6f4;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html {
+    background: #eff1f5;
+    color: #4c4f69;
+  }
+}
+
+/* Actual Styles */
+.header .background {
+  background: linear-gradient(to top, #1e1e2e, #1e1e2ecc),
+      linear-gradient(90deg, #74c7ec, #f38ba8);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100px;
+}
+.gradient {
+  background: linear-gradient(90deg, #74c7ec, #f38ba8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin: 0 10px;
+}
+
+.side-by-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+.side-by-side .description {
+  width: 250px;
+  font-size: large;
+  text-align: center;
+}
+.side-by-side .img-wrapper {
+  width: 175px;
+  height: 175px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+  align-items: end;
+}
+.side-by-side .img-wrapper img {
+  width: 100%;
+}
+.side-by-side .img-wrapper .img-alt {
+  position: absolute;
+  margin: 0;
+  width: 175px;
+  text-align: center;
+  background: #1e1e2e99;
+}
